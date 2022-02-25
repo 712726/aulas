@@ -1,7 +1,7 @@
 
 const int botao1 = 2;
 const int botao2 = 3;
-const int botao3 = 4
+const int botao3 = 4;
 const int led1 = 5;
 const int led2 = 6;
 const int led3 = 7;
@@ -32,8 +32,7 @@ valor2 = digitalRead(botao2);
 valor3 = digitalRead(botao3);
 
   if(valor1){
-	digitalWrite(led1, HIGH);
-    digitalWrite(led2, HIGH);
+    acendeTudo();
   }
   if(valor2){
     digitalWrite(led1, LOW);
@@ -41,7 +40,7 @@ valor3 = digitalRead(botao3);
     digitalWrite(led3, LOW);
   }
   if(valor3){
-    digitalWrite(led3, HIGH);
+    apagarTudo();
   }
 }
 void acendeTudo(){
